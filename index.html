@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>Memory Game</h1>
+    
+    <p>
+      Welcome!
+    </p>
+    <button id="startBtn" onclick="startGame()">Start</button>
+    <button id="stopBtn" class="hidden" onclick="stopGame()">Stop</button>
+    
+    <div id="gameButtonArea">
+      <button id="btn1" onmousedown="startTone(1)" onclick="guess(1)" onmouseup="stopTone()"></button>
+      <button id="btn2" onmousedown="startTone(2)" onclick="guess(2)" onmouseup="stopTone()"></button>  
+      <button id="btn3" onmousedown="startTone(3)" onclick="guess(3)" onmouseup="stopTone()"></button>
+      <button id="btn4" onmousedown="startTone(4)" onclick="guess(4)" onmouseup="stopTone()"></button>
+      <button id="btn5" onmousedown="startTone(5)" onclick="guess(5)" class="hidden" onmouseup="stopTone()"></button>
+      <button id="btn6" onmousedown="startTone(6)" onclick="guess(6)" class="hidden" onmouseup="stopTone()"></button>
+    </div>
+    <p>
+      How many buttons would you like to use? This will reset the game
+    </p>
+    <div id="buttonNumberArea">
+      <button id="4btns" onclick="setMaxButtons(4)">
+        4
+      </button>
+      <button id="5btns" onclick="setMaxButtons(5)">
+        5
+      </button>
+      <button id="6btns" onclick="setMaxButtons(6)">
+        6
+      </button>
+    </div>
+    
+    <button id="hsBtn" onclick="highScoreCheck()">
+      Check High Scores
+    </button>
+    <p>
+      Difficulty (how long it takes for it to speed up):
+    </p>
+    <button id="easy" onclick="changeDifficulty(1)">
+      Easy
+    </button>
+    <button id="medium" onclick="changeDifficulty(2)" class="selected">
+      Medium
+    </button>
+    <button id="hard" onclick="changeDifficulty(3)">
+      Hard
+    </button>
+
+  </body>
+</html>

@@ -1,0 +1,106 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  background-color: slategrey;
+  color: white;
+}
+
+h1 {
+  font-family: verdana, arial, sans-serif;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#gameButtonArea > button {
+  width: 200px;
+  height: 200px;
+  margin: 2px;
+}
+
+.hidden {
+  display: none;
+}
+
+#startBtn, #stopBtn {
+  background-color: black;
+  color: white;
+}
+
+#btn1 {
+  background: lightgreen;
+}
+
+#btn2 {
+  background: lightblue;
+}
+
+#btn3 {
+  background: pink;
+}
+
+#btn4 {
+  background: lightyellow;
+}
+
+#btn5 {
+  background: #d9b5ff;
+}
+
+#btn6 {
+  background: #ffdb9c;
+}
+
+#btn1:active, #btn1.lit {
+  background:green;
+  width:205px;
+  height:205px;
+}
+
+#btn2:active, #btn2.lit {
+  background:blue;
+  width:205px;
+  height:205px;
+}
+
+#btn3:active, #btn3.lit {
+  background:red;
+  width:205px;
+  height:205px;
+}
+
+#btn4:active, #btn4.lit {
+  background:yellow;
+  width:205px;
+  height:205px;
+}
+
+#btn5:active, #btn5.lit {
+  background: #c651f5;
+  width:205px;
+  height:205px;
+}
+
+#btn6:active, #btn6.lit {
+  background: #f0820c;
+  width:205px;
+  height:205px;
+}
+
+#hsBtn {
+  background-color: #cfc132
+}
+
+#buttonNumberArea > button {
+  width: 130px;
+  margin: 2px;
+}
+
+.selected {
+  background-color: black;
+  color: white;
+}
